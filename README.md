@@ -8,15 +8,13 @@ All processing happens on your machine and through your local backend.
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node](https://img.shields.io/badge/Node.js-Ready-green.svg)
 
-![VideoGraph Demo](cover.png)
-
 ## 🚀 Quick Start
 
 **1. Clone and start the app:**
 
 ```bash
-git clone https://github.com/YOUR_USER/VideoGraph-AI.git
-cd VideoGraph-AI
+git clone https://github.com/Jad490/Video-Graph-AI
+cd Video-Graph-AI
 ```
 
 **2. Start the backend:**
@@ -46,6 +44,12 @@ npm run dev
 
 ---
 
+### 🧠 Model Choice
+
+We experimented with several vision-language models (LLaVA, Qwen, SmolVLM, etc.) during development, but we decided to stick with **Gemini** for caption generation, since it consistently produced much more accurate and temporally coherent captions on our CCTV robbery and non-robbery videos, while the other models were noticeably slower and less reliable in their descriptions.
+
+---
+
 ## 💡 What It Does
 
 * **🎥 Extracts frames** from your uploaded video
@@ -65,9 +69,9 @@ npm run dev
 ## 🎮 How to Use
 
 1. Upload any video (MP4 recommended)
-2. Choose the frame extraction speed
+2. Add your **Gemini API Key**
 3. Click **Analyze** to send frames to Gemini
-4. Explore the interactive graph
+4. Explore the interactive graph and captions
 5. Export the full graph as JSON
 6. Reset whenever you want to process another video
 
@@ -188,6 +192,8 @@ The difference between the two models is stark and fundamental.
 > "VideoGraph AI is production-ready for forensic robbery analysis. It provides actionable intelligence—if a suspect drives a 'Silver Hatchback' or wears a 'Yellow Shirt,' the model catches it. The Baseline model is currently unusable for this task due to severe training bias and a failure to analyze pixel-level activity."
 
 *Disclaimer: The evaluation above is not subjective opinion; it was generated entirely by an independent LLM after analyzing the data from both models.*
+
+---
 
 ## ☁️ How We Deployed the Application on Render
 
