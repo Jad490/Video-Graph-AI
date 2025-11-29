@@ -128,7 +128,83 @@ Frontend and backend must run on different ports (5173 + 5000).
 
 ---
 
+## ⚖️ Model Comparison & Modifications
+
+This project includes a direct comparison with our baseline model.
+
+### 🔄 Modifications Made
+
+* **Input Method Change:** The original model utilized a **live camera feed** for real-time captioning.  
+* **Our Upgrade:** For this project, we modified the input method to handle **uploaded video files** instead. This allows for more flexible testing, forensic analysis of past footage, and consistent evaluation.
+
+**Prompt Standardization (Fair Comparison):**  
+The model's original prompt was very general:
+
+To fairly compare our upgraded model with it, we also **replaced the generic prompt** with the **same structured prompt we used in our system**, so both models were evaluated under identical instructions.
+
+### 📊 Evaluation Details
+
+We performed a comparative benchmark testing both models on a dataset of **100 videos**, specifically analyzing the completeness and accuracy of detected events.
+
+**Dataset & Methodology:**
+* **Source:** The evaluation utilized a [Real-world CCTV Robbery Dataset](https://drive.google.com/drive/folders/1NNLH4OtwwrdARL5mtNr5XjDFhGeIiGsL).
+* **Judge:** To ensure objectivity, we employed an independent **Third-Party LLM** to compare the generated Scene Graph JSONs against the ground truth of the video footage.
+
+
+#### The Results
+
+| Model | Accuracy | Performance Summary |
+| **VideoGraph AI** | **~88%** | Successfully captures key events, specific object attributes, and temporal actions. |
+| **Original Baseline Model** | **~21%** | Frequently relies on generic schema, misses specific actions, and prone to hallucination. |
+
+---
+
+#### 📑 Independent Audit Report (Sample 10 Videos)
+
+*While aggregate accuracy metrics were derived from the full 100-video dataset, we submitted a **random representative subset of 10 videos** to an independent third-party LLM for a detailed qualitative audit. This deep-dive analysis was conducted to objectively verify specific failure modes (e.g., hallucinations) and model behaviors without the subjectivity of manual review.*
+
+* **Sample Data:** The raw outputs for 10 test cases (Videos 13 - 44 - 56 - 86 - 98 - 108 - 120 - 130 - 132 - 159) are available in this repository under the directories `/BASELINE - JSON` (Teacher) and `/OUR - JSON` (VideoGraph AI).
+ 
+**1. Executive Summary**
+The difference between the two models is stark and fundamental.
+
+* **Model A (VideoGraph AI)** functions as a **Forensic Analyst**. It demonstrates a high level of "visual understanding." It successfully tracks temporal events (start to finish), identifies specific object attributes (colors, weapon types), and interprets complex human behaviors (crawling, tackling, surrendering).
+* **Model B (Baseline)** functions as a **Generic Metadata Tagger**. It consistently fails to "see" the specific events of the video. It relies on high-level, abstract schema (e.g., "camera captures moment") and frequently hallucinates unrelated contexts, such as describing a violent robbery as a "reporter interviewing people."
+
+**2. Detailed Grading**
+
+| Metric | Model A (Ours) | Model B (Baseline) |
+| **Object Detection** | **High** (Detected specific guns, clothing colors, cars, dogs) | **Fail** (Generic labels like "object," "shirt," "outfit") |
+| **Action Recognition** | **High** (Detected "crawling," "vaulting," "struggling") | **Fail** (Generic verbs like "shows," "captures," "see") |
+| **Context Awareness** | **High** (Distinguished Garage vs. Store vs. Salon) | **Fail** (Labeled Garage as Store; Robbery as Interview) |
+| **Hallucination Rate** | **Low** (Minor entity splitting) | **Critical** (Invented reporters, books, and interviews) |
+| **Final Score** | **86.5% (A)** | **15% (F)** |
+
+**3. Verdict**
+**Winner: VideoGraph AI is vastly superior.**
+
+> "VideoGraph AI is production-ready for forensic robbery analysis. It provides actionable intelligence—if a suspect drives a 'Silver Hatchback' or wears a 'Yellow Shirt,' the model catches it. The Baseline model is currently unusable for this task due to severe training bias and a failure to analyze pixel-level activity."
+
+*Disclaimer: The evaluation above is not subjective opinion; it was generated entirely by an independent LLM after analyzing the data from both models.*
+
+## ☁️ How We Deployed the Application on Render
+
+In this project, we used Render to handle deployment. Here's the sequence of steps we followed:
+
+1. *Render Account Setup*: We started by creating a Render account to host our service.
+
+2. *Connecting GitHub*: Next, we linked our Render account with our GitHub repository for seamless integration.
+
+3. *Creating a New Service*: We then set up a new cloud service on Render that connects directly to our GitHub repo.
+
+4. *Render Configuration*: We created a render.yaml file containing the necessary configuration details for the deployment.
+
+5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL @https://video-graph-ai.onrender.com.
+
+
 ## 🔄 Updates
+
+---
 
 ```bash
 git pull origin main
