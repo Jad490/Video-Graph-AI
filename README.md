@@ -211,7 +211,7 @@ We performed a comparative benchmark testing both models on a dataset of **100 v
 | Model | Accuracy | Performance Summary |
 | :--- | :--- | :--- |
 | **VideoGraph AI (Ours)** | **~88%** | Successfully captures key events, specific object attributes, and temporal actions. |
-| **Original Teacher Model** | **~21%** | Frequently relies on generic schema, misses specific actions, and prone to hallucination. |
+| **Original Baseline Model** | **~21%** | Frequently relies on generic schema, misses specific actions, and prone to hallucination. |
 
 ---
 
@@ -235,7 +235,7 @@ The difference between the two models is stark and fundamental.
 | **Action Recognition** | **High** (Detected "crawling," "vaulting," "struggling") | **Fail** (Generic verbs like "shows," "captures," "see") |
 | **Context Awareness** | **High** (Distinguished Garage vs. Store vs. Salon) | **Fail** (Labeled Garage as Store; Robbery as Interview) |
 | **Hallucination Rate** | **Low** (Minor entity splitting) | **Critical** (Invented reporters, books, and interviews) |
-| **Final Score** | **86.5% (A)** | **15% (F)** |
+| **Final Score** | **86.5%** | **18%** |
 
 **3. Verdict**
 **Winner: VideoGraph AI is vastly superior.**
