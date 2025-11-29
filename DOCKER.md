@@ -5,6 +5,9 @@
 ### Option 1: Using Docker Compose (Recommended)
 
 ```bash
+
+#Clone repo before
+
 # Build and start the container
 docker-compose up -d
 
