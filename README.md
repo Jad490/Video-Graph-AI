@@ -2,8 +2,9 @@
 
 **Generate scene graphs from videos using AI** 🎥✨
 
-Upload any video, extract frames, and transform them into interactive scene graphs powered by Google Gemini.
-All processing happens on your machine and through your local backend.
+Upload any video, extract frames, and transform them into interactive scene graphs! 
+You can run the app locally or use our website 👉 [https://video-graph-ai.onrender.com](https://video-graph-ai.onrender.com)
+
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node](https://img.shields.io/badge/Node.js-Ready-green.svg)
@@ -207,7 +208,7 @@ In this project, we used Render to handle deployment. Here's the sequence of ste
 
 4. *Render Configuration*: We created a render.yaml file containing the necessary configuration details for the deployment.
 
-5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL https://video-graph-ai.onrender.com.
+5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL https://video-graph-ai.onrender.com
 
 
 ## 🔄 Updates
