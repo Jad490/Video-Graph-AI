@@ -9,7 +9,60 @@ You can run the app locally or use our website 👉 [https://video-graph-ai.onre
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node](https://img.shields.io/badge/Node.js-Ready-green.svg)
 
-## 🚀 Quick Start
+
+---
+
+## ☁️ Quick Start (Render)
+
+We deployed VideoGraph AI to the cloud using Render.  
+You can try the app directly here:
+
+- Live URL: https://video-graph-ai.onrender.com
+
+> Note: On the first request Render may need a few seconds to spin up the service.
+
+---
+
+## 🐳 Quick Start with Docker
+
+If you prefer not to install Node.js and dependencies locally, you can run VideoGraph AI with Docker.
+
+### Option 1 – Docker Compose (recommended)
+
+    # Clone this repo
+    git clone https://github.com/Jad490/Video-Graph-AI.git
+    cd Video-Graph-AI
+
+    # Build and start the containers
+    docker-compose up -d
+
+    # View logs
+    docker-compose logs -f
+
+    # Stop the containers
+    docker-compose down
+
+### Option 2 – Docker CLI
+
+    # Build the image
+    docker build -t videograph-ai .
+
+    # Run the container
+    docker run -d \
+      --name videograph-ai \
+      -p 5173:5173 \
+      -p 5001:5001 \
+      videograph-ai
+
+    # View logs
+    docker logs -f videograph-ai
+
+    # Stop and remove the container
+    docker stop videograph-ai
+    docker rm videograph-ai
+
+
+## 🚀 Quick Start (Normal)
 
 **1. Clone and start the app:**
 
@@ -111,9 +164,6 @@ npm run build
 
 **API key errors?**
 Make sure you pass your Gemini API key correctly through the UI.
-
-**Long processing time?**
-Large videos = many frames. Try lowering frame extraction rate.
 
 **Empty graph?**
 Ensure your video isn’t too dark or too fast-moving.
