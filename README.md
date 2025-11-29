@@ -154,8 +154,9 @@ We performed a comparative benchmark testing both models on a dataset of **100 v
 #### The Results
 
 | Model | Accuracy | Performance Summary |
-| **VideoGraph AI** | **~88%** | Successfully captures key events, specific object attributes, and temporal actions. |
-| **Original Baseline Model** | **~21%** | Frequently relies on generic schema, misses specific actions, and prone to hallucination. |
+| :--- | :--- | :--- |
+| **VideoGraph AI (Ours)** | **~88%** | Successfully captures key events, specific object attributes, and temporal actions. |
+| **Original Teacher Model** | **~21%** | Frequently relies on generic schema, misses specific actions, and prone to hallucination. |
 
 ---
 
