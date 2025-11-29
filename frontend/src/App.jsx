@@ -85,7 +85,7 @@ export default function App() {
         setProgress(40)
 
         setProcessStep(`Sending ${frames.length} frames to backend API...`)
-        const response = await fetch('http://localhost:5000/api/analyze', {
+        const response = await fetch('http://localhost:5001/api/analyze', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ apiKey, frames }),
