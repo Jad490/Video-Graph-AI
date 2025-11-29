@@ -1,0 +1,216 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764451046.981353",
+        "data": {
+          "action": "observe",
+          "subject": "we",
+          "object": "scenario",
+          "location": "image"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764451046.981353",
+        "target": "event_1764451046.981353",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764451041.830299",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764451041.844142",
+        "data": {
+          "verb": "holding",
+          "agent": "one",
+          "target": "weapon"
+        }
+      },
+      {
+        "id": "action_1764451056.108029",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764451072.892068",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "people"
+        }
+      },
+      {
+        "id": "action_1764451081.857592",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764451082.041829",
+        "data": {
+          "verb": "wearing",
+          "agent": "person",
+          "target": "shirt"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764451041.830299",
+        "target": "action_1764451041.830299",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451041.830299",
+        "target": "action_1764451056.108029",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451041.830299",
+        "target": "action_1764451072.892068",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.013063382357358932
+        }
+      },
+      {
+        "source": "action_1764451041.830299",
+        "target": "action_1764451081.857592",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451041.844142",
+        "target": "action_1764451041.844142",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451056.108029",
+        "target": "action_1764451056.108029",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451056.108029",
+        "target": "action_1764451072.892068",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.013063382357358932
+        }
+      },
+      {
+        "source": "action_1764451056.108029",
+        "target": "action_1764451081.857592",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451072.892068",
+        "target": "action_1764451072.892068",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451072.892068",
+        "target": "action_1764451081.857592",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.013063382357358932
+        }
+      },
+      {
+        "source": "action_1764451081.857592",
+        "target": "action_1764451081.857592",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451082.041829",
+        "target": "action_1764451082.041829",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "chair",
+        "data": {
+          "text": "chair",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

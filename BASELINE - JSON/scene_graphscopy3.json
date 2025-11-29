@@ -1,0 +1,159 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764450025.132947",
+        "data": {
+          "action": "thrown",
+          "subject": "person",
+          "object": "book",
+          "location": "someone"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764450025.132947",
+        "target": "event_1764450025.132947",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764450021.75515",
+        "data": {
+          "verb": "wearing",
+          "agent": "One",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764450021.759775",
+        "data": {
+          "verb": "wearing",
+          "agent": "other",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764450022.207649",
+        "data": {
+          "verb": "contains",
+          "agent": "image",
+          "target": "elements"
+        }
+      },
+      {
+        "id": "action_1764450024.218809",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "someone"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764450021.75515",
+        "target": "action_1764450021.75515",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764450021.75515",
+        "target": "action_1764450021.759775",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764450021.759775",
+        "target": "action_1764450021.759775",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764450022.207649",
+        "target": "action_1764450022.207649",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764450022.207649",
+        "target": "action_1764450024.218809",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.07106057554483414
+        }
+      },
+      {
+        "source": "action_1764450024.218809",
+        "target": "action_1764450024.218809",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999998807907104
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "table",
+        "data": {
+          "text": "table",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "book",
+        "data": {
+          "text": "book",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

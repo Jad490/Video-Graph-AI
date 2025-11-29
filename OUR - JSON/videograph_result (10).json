@@ -1,0 +1,144 @@
+{
+  "captions": [
+    {
+      "time": 0,
+      "text": "Four people, including an employee and patrons, are gathered around a counter inside a small store."
+    },
+    {
+      "time": 1,
+      "text": "Two individuals wearing helmets (Robbers) suddenly enter the scene and initiate an attack, subduing the patrons."
+    },
+    {
+      "time": 2,
+      "text": "One robber pushes a woman victim down onto the floor behind the counter."
+    },
+    {
+      "time": 4,
+      "text": "Both robbers lean over the counter and begin searching the area for valuables while the victims remain subdued."
+    },
+    {
+      "time": 7,
+      "text": "The robbers continue to collect items from the counter and surrounding area."
+    },
+    {
+      "time": 10,
+      "text": "The robbers finish their search and prepare to flee the store."
+    },
+    {
+      "time": 11,
+      "text": "The robbers exit the store, leaving the employee and the woman victim behind."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "Store",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "N2",
+      "label": "Employee",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N3",
+      "label": "Woman Victim",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N4",
+      "label": "Robber 1 (Dark Blue)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "N5",
+      "label": "Robber 2 (Light Blue)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "N6",
+      "label": "Counter",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "N7",
+      "label": "Motorcycle Helmet",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "N8",
+      "label": "Patrons",
+      "type": "person",
+      "group": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "N4",
+      "target": "N1",
+      "label": "enters"
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "label": "enters"
+    },
+    {
+      "source": "N4",
+      "target": "N7",
+      "label": "wears"
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "label": "wears"
+    },
+    {
+      "source": "N4",
+      "target": "N8",
+      "label": "subdues"
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "label": "pushes"
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "label": "threatens"
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "label": "searches"
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "label": "searches"
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "label": "takes_items_from"
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "label": "exits"
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "label": "exits"
+    }
+  ]
+}

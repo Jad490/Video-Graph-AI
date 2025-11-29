@@ -1,0 +1,1041 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764451673.389887",
+        "data": {
+          "action": "takes",
+          "subject": "robbery",
+          "object": "place",
+          "location": "store"
+        }
+      },
+      {
+        "id": "event_1764451687.661835",
+        "data": {
+          "action": "captures",
+          "subject": "camera",
+          "object": "scene",
+          "location": "store"
+        }
+      },
+      {
+        "id": "event_1764451695.259445",
+        "data": {
+          "action": "wearing",
+          "subject": "person",
+          "object": "shirt",
+          "location": "side"
+        }
+      },
+      {
+        "id": "event_1764451707.026788",
+        "data": {
+          "action": "wearing",
+          "subject": "man",
+          "object": "outfit",
+          "location": "image"
+        }
+      },
+      {
+        "id": "event_1764451736.05176",
+        "data": {
+          "action": "entering",
+          "subject": "man",
+          "object": "store",
+          "location": "photo"
+        }
+      },
+      {
+        "id": "event_1764451742.2376",
+        "data": {
+          "action": "captures",
+          "subject": "video",
+          "object": "person",
+          "location": "store"
+        }
+      },
+      {
+        "id": "event_1764451746.49564",
+        "data": {
+          "action": "captured",
+          "subject": "Video",
+          "object": "moment",
+          "location": "store"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451673.389887",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451687.661835",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.2034144103527069
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451695.259445",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.09797202795743942
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451707.026788",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.16859421133995056
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451736.05176",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.11700873076915741
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.06853610277175903
+        }
+      },
+      {
+        "source": "event_1764451673.389887",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.0517755001783371
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451687.661835",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451695.259445",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.045741260051727295
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451707.026788",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.09517551213502884
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451736.05176",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.14422418177127838
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.08124685287475586
+        }
+      },
+      {
+        "source": "event_1764451687.661835",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.03328107297420502
+        }
+      },
+      {
+        "source": "event_1764451695.259445",
+        "target": "event_1764451695.259445",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "event_1764451695.259445",
+        "target": "event_1764451707.026788",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.07978596538305283
+        }
+      },
+      {
+        "source": "event_1764451695.259445",
+        "target": "event_1764451736.05176",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.16762489080429077
+        }
+      },
+      {
+        "source": "event_1764451695.259445",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.13268813490867615
+        }
+      },
+      {
+        "source": "event_1764451695.259445",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.13166987895965576
+        }
+      },
+      {
+        "source": "event_1764451707.026788",
+        "target": "event_1764451707.026788",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "event_1764451707.026788",
+        "target": "event_1764451736.05176",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.05757715553045273
+        }
+      },
+      {
+        "source": "event_1764451707.026788",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.05163690075278282
+        }
+      },
+      {
+        "source": "event_1764451707.026788",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.04080776870250702
+        }
+      },
+      {
+        "source": "event_1764451736.05176",
+        "target": "event_1764451736.05176",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "event_1764451736.05176",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.004661080427467823
+        }
+      },
+      {
+        "source": "event_1764451736.05176",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.045750781893730164
+        }
+      },
+      {
+        "source": "event_1764451742.2376",
+        "target": "event_1764451742.2376",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "event_1764451742.2376",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.11221163719892502
+        }
+      },
+      {
+        "source": "event_1764451746.49564",
+        "target": "event_1764451746.49564",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.9999999403953552
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764451673.403325",
+        "data": {
+          "verb": "takes",
+          "agent": "robbery",
+          "target": "place"
+        }
+      },
+      {
+        "id": "action_1764451676.470531",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "person"
+        }
+      },
+      {
+        "id": "action_1764451679.498343",
+        "data": {
+          "verb": "has",
+          "agent": "person",
+          "target": "uniform"
+        }
+      },
+      {
+        "id": "action_1764451682.626762",
+        "data": {
+          "verb": "shows",
+          "agent": "half",
+          "target": "person"
+        }
+      },
+      {
+        "id": "action_1764451682.64181",
+        "data": {
+          "verb": "wearing",
+          "agent": "They",
+          "target": "uniform"
+        }
+      },
+      {
+        "id": "action_1764451682.652739",
+        "data": {
+          "verb": "exiting",
+          "agent": "person",
+          "target": "store"
+        }
+      },
+      {
+        "id": "action_1764451687.673348",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764451695.283464",
+        "data": {
+          "verb": "doing",
+          "agent": "they",
+          "target": "What"
+        }
+      },
+      {
+        "id": "action_1764451695.287951",
+        "data": {
+          "verb": "wearing",
+          "agent": "person",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764451699.602636",
+        "data": {
+          "verb": "Locate",
+          "agent": "Step",
+          "target": "individuals"
+        }
+      },
+      {
+        "id": "action_1764451699.607599",
+        "data": {
+          "verb": "holding",
+          "agent": "who",
+          "target": "object"
+        }
+      },
+      {
+        "id": "action_1764451707.049998",
+        "data": {
+          "verb": "wearing",
+          "agent": "man",
+          "target": "outfit"
+        }
+      },
+      {
+        "id": "action_1764451718.070761",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764451722.13542",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "video"
+        }
+      },
+      {
+        "id": "action_1764451722.147815",
+        "data": {
+          "verb": "shows",
+          "agent": "frame",
+          "target": "group"
+        }
+      },
+      {
+        "id": "action_1764451726.072293",
+        "data": {
+          "verb": "wearing",
+          "agent": "clerk",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764451733.23754",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764451736.096438",
+        "data": {
+          "verb": "entering",
+          "agent": "man",
+          "target": "store"
+        }
+      },
+      {
+        "id": "action_1764451739.513786",
+        "data": {
+          "verb": "contains",
+          "agent": "footage",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764451742.269732",
+        "data": {
+          "verb": "captures",
+          "agent": "video",
+          "target": "person"
+        }
+      },
+      {
+        "id": "action_1764451744.886039",
+        "data": {
+          "verb": "doing",
+          "agent": "they",
+          "target": "What"
+        }
+      },
+      {
+        "id": "action_1764451746.530764",
+        "data": {
+          "verb": "captured",
+          "agent": "Video",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764451748.347142",
+        "data": {
+          "verb": "wearing",
+          "agent": "person",
+          "target": "expression"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764451673.403325",
+        "target": "action_1764451673.403325",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451676.470531",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451679.498343",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.09491950273513794
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451682.626762",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.14581751823425293
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451682.652739",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.03900214657187462
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451695.287951",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.06977743655443192
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451722.13542",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.006343207322061062
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451733.23754",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.17953161895275116
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.13439418375492096
+        }
+      },
+      {
+        "source": "action_1764451676.470531",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.16894468665122986
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451679.498343",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451682.626762",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.14633233845233917
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451682.64181",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.04049839824438095
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451682.652739",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.0435909628868103
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451695.287951",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.016246460378170013
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.1117064505815506
+        }
+      },
+      {
+        "source": "action_1764451679.498343",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.05930078402161598
+        }
+      },
+      {
+        "source": "action_1764451682.626762",
+        "target": "action_1764451682.626762",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451682.626762",
+        "target": "action_1764451682.652739",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.04401794821023941
+        }
+      },
+      {
+        "source": "action_1764451682.626762",
+        "target": "action_1764451695.287951",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.14913810789585114
+        }
+      },
+      {
+        "source": "action_1764451682.626762",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.17149920761585236
+        }
+      },
+      {
+        "source": "action_1764451682.626762",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.036187637597322464
+        }
+      },
+      {
+        "source": "action_1764451682.64181",
+        "target": "action_1764451682.64181",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451682.652739",
+        "target": "action_1764451682.652739",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451682.652739",
+        "target": "action_1764451695.287951",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.031615182757377625
+        }
+      },
+      {
+        "source": "action_1764451682.652739",
+        "target": "action_1764451736.096438",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.09764878451824188
+        }
+      },
+      {
+        "source": "action_1764451682.652739",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.1512461155653
+        }
+      },
+      {
+        "source": "action_1764451682.652739",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.039905279874801636
+        }
+      },
+      {
+        "source": "action_1764451687.673348",
+        "target": "action_1764451687.673348",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451687.673348",
+        "target": "action_1764451718.070761",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.059085141867399216
+        }
+      },
+      {
+        "source": "action_1764451695.283464",
+        "target": "action_1764451695.283464",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.1893613636493683
+        }
+      },
+      {
+        "source": "action_1764451695.283464",
+        "target": "action_1764451744.886039",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.08968811482191086
+        }
+      },
+      {
+        "source": "action_1764451695.287951",
+        "target": "action_1764451695.287951",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451695.287951",
+        "target": "action_1764451726.072293",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.02338540554046631
+        }
+      },
+      {
+        "source": "action_1764451695.287951",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.027330687269568443
+        }
+      },
+      {
+        "source": "action_1764451695.287951",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.10143796354532242
+        }
+      },
+      {
+        "source": "action_1764451699.602636",
+        "target": "action_1764451699.602636",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451699.607599",
+        "target": "action_1764451699.607599",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451707.049998",
+        "target": "action_1764451707.049998",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451707.049998",
+        "target": "action_1764451736.096438",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.03438029810786247
+        }
+      },
+      {
+        "source": "action_1764451718.070761",
+        "target": "action_1764451718.070761",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764451718.070761",
+        "target": "action_1764451733.23754",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.012694144621491432
+        }
+      },
+      {
+        "source": "action_1764451718.070761",
+        "target": "action_1764451739.513786",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.011697373352944851
+        }
+      },
+      {
+        "source": "action_1764451718.070761",
+        "target": "action_1764451746.530764",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.00864676758646965
+        }
+      },
+      {
+        "source": "action_1764451722.13542",
+        "target": "action_1764451722.13542",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451722.13542",
+        "target": "action_1764451733.23754",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.10615462064743042
+        }
+      },
+      {
+        "source": "action_1764451722.13542",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.02607102133333683
+        }
+      },
+      {
+        "source": "action_1764451722.147815",
+        "target": "action_1764451722.147815",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451726.072293",
+        "target": "action_1764451726.072293",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451733.23754",
+        "target": "action_1764451733.23754",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451733.23754",
+        "target": "action_1764451739.513786",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.11115973442792892
+        }
+      },
+      {
+        "source": "action_1764451733.23754",
+        "target": "action_1764451746.530764",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.059318169951438904
+        }
+      },
+      {
+        "source": "action_1764451736.096438",
+        "target": "action_1764451736.096438",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764451739.513786",
+        "target": "action_1764451739.513786",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451739.513786",
+        "target": "action_1764451746.530764",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.053354669362306595
+        }
+      },
+      {
+        "source": "action_1764451742.269732",
+        "target": "action_1764451742.269732",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451742.269732",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.027622491121292114
+        }
+      },
+      {
+        "source": "action_1764451744.886039",
+        "target": "action_1764451744.886039",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.05389408394694328
+        }
+      },
+      {
+        "source": "action_1764451746.530764",
+        "target": "action_1764451746.530764",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451748.347142",
+        "target": "action_1764451748.347142",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "People",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "time frame",
+        "data": {
+          "text": "Time Frame",
+          "label": "ORG"
+        }
+      },
+      {
+        "id": "screen",
+        "data": {
+          "text": "screen",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "chair",
+        "data": {
+          "text": "chair",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "laptop",
+        "data": {
+          "text": "laptop",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "generate",
+        "data": {
+          "text": "Generate",
+          "label": "PERSON"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

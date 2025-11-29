@@ -1,0 +1,367 @@
+{
+  "scene_graph": {
+    "nodes": [],
+    "edges": []
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764451932.094972",
+        "data": {
+          "verb": "entered",
+          "agent": "robber",
+          "target": "store"
+        }
+      },
+      {
+        "id": "action_1764451935.609644",
+        "data": {
+          "verb": "wearing",
+          "agent": "He",
+          "target": "hoodie"
+        }
+      },
+      {
+        "id": "action_1764451939.420814",
+        "data": {
+          "verb": "approaches",
+          "agent": "robber",
+          "target": "counter"
+        }
+      },
+      {
+        "id": "action_1764451942.63925",
+        "data": {
+          "verb": "holding",
+          "agent": "robber",
+          "target": "gun"
+        }
+      },
+      {
+        "id": "action_1764451942.830503",
+        "data": {
+          "verb": "holding",
+          "agent": "person",
+          "target": "gun"
+        }
+      },
+      {
+        "id": "action_1764451948.796845",
+        "data": {
+          "verb": "holding",
+          "agent": "robber",
+          "target": "gun"
+        }
+      },
+      {
+        "id": "action_1764451949.967111",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "area"
+        }
+      },
+      {
+        "id": "action_1764451949.971937",
+        "data": {
+          "verb": "has",
+          "agent": "counter",
+          "target": "register"
+        }
+      },
+      {
+        "id": "action_1764451949.980135",
+        "data": {
+          "verb": "holding",
+          "agent": "person",
+          "target": "object"
+        }
+      },
+      {
+        "id": "action_1764451950.092031",
+        "data": {
+          "verb": "threatening",
+          "agent": "robber",
+          "target": "cashier"
+        }
+      },
+      {
+        "id": "action_1764451950.113133",
+        "data": {
+          "verb": "wearing",
+          "agent": "robber",
+          "target": "hat"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451932.094972",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451939.420814",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.0640116035938263
+        }
+      },
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451942.63925",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.03271273523569107
+        }
+      },
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451948.796845",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.03271273523569107
+        }
+      },
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451950.092031",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.07927120476961136
+        }
+      },
+      {
+        "source": "action_1764451932.094972",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.24087366461753845
+        }
+      },
+      {
+        "source": "action_1764451935.609644",
+        "target": "action_1764451935.609644",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451939.420814",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451942.63925",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.11330657452344894
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451948.796845",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.11330657452344894
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451949.971937",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.13947740197181702
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451950.092031",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.024670209735631943
+        }
+      },
+      {
+        "source": "action_1764451939.420814",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.07791335135698318
+        }
+      },
+      {
+        "source": "action_1764451942.63925",
+        "target": "action_1764451942.63925",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451942.63925",
+        "target": "action_1764451942.830503",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.11225815117359161
+        }
+      },
+      {
+        "source": "action_1764451942.63925",
+        "target": "action_1764451948.796845",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451942.63925",
+        "target": "action_1764451950.092031",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.009662242606282234
+        }
+      },
+      {
+        "source": "action_1764451942.63925",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.08708181977272034
+        }
+      },
+      {
+        "source": "action_1764451942.830503",
+        "target": "action_1764451942.830503",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451942.830503",
+        "target": "action_1764451948.796845",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.11225815117359161
+        }
+      },
+      {
+        "source": "action_1764451942.830503",
+        "target": "action_1764451949.980135",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.08446821570396423
+        }
+      },
+      {
+        "source": "action_1764451948.796845",
+        "target": "action_1764451948.796845",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451948.796845",
+        "target": "action_1764451950.092031",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.009662242606282234
+        }
+      },
+      {
+        "source": "action_1764451948.796845",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.08708181977272034
+        }
+      },
+      {
+        "source": "action_1764451949.967111",
+        "target": "action_1764451949.967111",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764451949.971937",
+        "target": "action_1764451949.971937",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451949.980135",
+        "target": "action_1764451949.980135",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764451950.092031",
+        "target": "action_1764451950.092031",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764451950.092031",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.01341427955776453
+        }
+      },
+      {
+        "source": "action_1764451950.113133",
+        "target": "action_1764451950.113133",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

@@ -1,0 +1,133 @@
+{
+  "captions": [
+    {
+      "time": 105223,
+      "text": "An employee (Victim 1, red shirt) is standing near the counter area of the store."
+    },
+    {
+      "time": 105227,
+      "text": "A robber, wearing a helmet, quickly enters the frame and confronts Victim 1."
+    },
+    {
+      "time": 105231,
+      "text": "A second victim (Victim 2, white shirt) enters the aisle and immediately raises his hands in surrender."
+    },
+    {
+      "time": 105235,
+      "text": "A third victim (Victim 3, teal shirt) is visible behind the main service counter."
+    },
+    {
+      "time": 105243,
+      "text": "Victim 1 also raises his hands, complying with the robber's demands."
+    },
+    {
+      "time": 105250,
+      "text": "The robber moves toward the counter area where Victim 3 is located."
+    },
+    {
+      "time": 105258,
+      "text": "The robber leans over the counter, beginning to search the desk area for valuables."
+    },
+    {
+      "time": 105306,
+      "text": "The robber actively rummages through items on the counter surface."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "R1",
+      "label": "Robber (Helmet)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "V1",
+      "label": "Victim 1 (Red Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "V2",
+      "label": "Victim 2 (White Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "V3",
+      "label": "Victim 3 (Teal Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "L1",
+      "label": "Store Interior",
+      "type": "location",
+      "group": 3
+    },
+    {
+      "id": "O1",
+      "label": "Counter/Desk",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "O2",
+      "label": "Helmet",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "O3",
+      "label": "Valuables/Money",
+      "type": "object",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "R1",
+      "target": "L1",
+      "label": "enters"
+    },
+    {
+      "source": "R1",
+      "target": "O2",
+      "label": "wears"
+    },
+    {
+      "source": "R1",
+      "target": "V1",
+      "label": "confronts"
+    },
+    {
+      "source": "R1",
+      "target": "V2",
+      "label": "threatens"
+    },
+    {
+      "source": "R1",
+      "target": "V3",
+      "label": "threatens"
+    },
+    {
+      "source": "V1",
+      "target": "R1",
+      "label": "complies_with"
+    },
+    {
+      "source": "V2",
+      "target": "R1",
+      "label": "complies_with"
+    },
+    {
+      "source": "R1",
+      "target": "O1",
+      "label": "searches"
+    },
+    {
+      "source": "R1",
+      "target": "O3",
+      "label": "takes"
+    }
+  ]
+}

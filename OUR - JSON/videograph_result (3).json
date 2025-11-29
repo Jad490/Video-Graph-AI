@@ -1,0 +1,113 @@
+{
+  "captions": [
+    {
+      "time": 4,
+      "text": "A man approaches the counter where a cashier is seated."
+    },
+    {
+      "time": 11,
+      "text": "The cashier reaches below the counter, retrieving a tray or box."
+    },
+    {
+      "time": 16,
+      "text": "The man pulls out a handgun, revealing he is committing an armed robbery."
+    },
+    {
+      "time": 19,
+      "text": "The cashier opens the tray while the robber points toward the items."
+    },
+    {
+      "time": 24,
+      "text": "The cashier begins handing over small items from the tray to the robber."
+    },
+    {
+      "time": 29,
+      "text": "The cashier hands over cash or paper items across the counter."
+    },
+    {
+      "time": 32,
+      "text": "The robber takes the stolen goods from the cashier."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "Robber",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N2",
+      "label": "Cashier",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N3",
+      "label": "Store/Market",
+      "type": "location",
+      "group": 3
+    },
+    {
+      "id": "N4",
+      "label": "Counter/Desk",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "N5",
+      "label": "Handgun",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "N6",
+      "label": "Tray/Box",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "N7",
+      "label": "Stolen Goods (Cash/Items)",
+      "type": "object",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "N1",
+      "target": "N4",
+      "label": "approaches"
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "label": "works_at"
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "label": "holds"
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "label": "threatens"
+    },
+    {
+      "source": "N2",
+      "target": "N6",
+      "label": "retrieves"
+    },
+    {
+      "source": "N2",
+      "target": "N7",
+      "label": "hands_over"
+    },
+    {
+      "source": "N1",
+      "target": "N7",
+      "label": "takes"
+    }
+  ]
+}

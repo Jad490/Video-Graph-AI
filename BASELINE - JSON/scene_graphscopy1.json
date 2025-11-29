@@ -1,0 +1,195 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764448799.696354",
+        "data": {
+          "action": "shows",
+          "subject": "video",
+          "object": "group",
+          "location": "location"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764448799.696354",
+        "target": "event_1764448799.696354",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.9999999403953552
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764448784.599147",
+        "data": {
+          "verb": "captures",
+          "agent": "it",
+          "target": "people"
+        }
+      },
+      {
+        "id": "action_1764448788.072392",
+        "data": {
+          "verb": "having",
+          "agent": "people",
+          "target": "conversation"
+        }
+      },
+      {
+        "id": "action_1764448788.083465",
+        "data": {
+          "verb": "says",
+          "agent": "that",
+          "target": "Shirley"
+        }
+      },
+      {
+        "id": "action_1764448798.3036",
+        "data": {
+          "verb": "shows",
+          "agent": "side",
+          "target": "person"
+        }
+      },
+      {
+        "id": "action_1764448799.700568",
+        "data": {
+          "verb": "shows",
+          "agent": "video",
+          "target": "group"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764448784.599147",
+        "target": "action_1764448784.599147",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764448784.599147",
+        "target": "action_1764448788.072392",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.06822618097066879
+        }
+      },
+      {
+        "source": "action_1764448788.072392",
+        "target": "action_1764448788.072392",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764448788.083465",
+        "target": "action_1764448788.083465",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764448798.3036",
+        "target": "action_1764448798.3036",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764448799.700568",
+        "target": "action_1764448799.700568",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "woman",
+        "data": {
+          "text": "woman",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirley",
+        "data": {
+          "text": "Shirley",
+          "label": "PERSON"
+        }
+      },
+      {
+        "id": "screen",
+        "data": {
+          "text": "screen",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "laptop",
+        "data": {
+          "text": "laptop",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "desk",
+        "data": {
+          "text": "desk",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

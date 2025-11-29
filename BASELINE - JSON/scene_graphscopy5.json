@@ -1,0 +1,150 @@
+{
+  "scene_graph": {
+    "nodes": [],
+    "edges": []
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764450684.38518",
+        "data": {
+          "verb": "threatens",
+          "agent": "person",
+          "target": "person",
+          "manner": "when"
+        }
+      },
+      {
+        "id": "action_1764450691.956922",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764450706.435938",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764450709.534403",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "individuals"
+        }
+      },
+      {
+        "id": "action_1764450719.348319",
+        "data": {
+          "verb": "holding",
+          "agent": "person",
+          "target": "gun"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764450684.38518",
+        "target": "action_1764450684.38518",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764450684.38518",
+        "target": "action_1764450719.348319",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.012943397276103497
+        }
+      },
+      {
+        "source": "action_1764450691.956922",
+        "target": "action_1764450691.956922",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764450691.956922",
+        "target": "action_1764450706.435938",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764450706.435938",
+        "target": "action_1764450706.435938",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764450709.534403",
+        "target": "action_1764450709.534403",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764450719.348319",
+        "target": "action_1764450719.348319",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "cam55",
+        "data": {
+          "text": "CAM55",
+          "label": "GPE"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

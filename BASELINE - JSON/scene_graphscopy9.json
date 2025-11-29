@@ -1,0 +1,205 @@
+{
+  "scene_graph": {
+    "nodes": [],
+    "edges": []
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764452212.339495",
+        "data": {
+          "verb": "captured",
+          "agent": "camera",
+          "target": "incident"
+        }
+      },
+      {
+        "id": "action_1764452230.491979",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "area"
+        }
+      },
+      {
+        "id": "action_1764452236.007667",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "robbery"
+        }
+      },
+      {
+        "id": "action_1764452239.060522",
+        "data": {
+          "verb": "wearing",
+          "agent": "robber",
+          "target": "uniform"
+        }
+      },
+      {
+        "id": "action_1764452250.278033",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764452253.120171",
+        "data": {
+          "verb": "threatening",
+          "agent": "robber",
+          "target": "someone"
+        }
+      },
+      {
+        "id": "action_1764452261.939966",
+        "data": {
+          "verb": "shows",
+          "agent": "photo",
+          "target": "individual"
+        }
+      },
+      {
+        "id": "action_1764452261.944799",
+        "data": {
+          "verb": "wearing",
+          "agent": "who",
+          "target": "hoodie"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764452212.339495",
+        "target": "action_1764452212.339495",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452212.339495",
+        "target": "action_1764452236.007667",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.0690634548664093
+        }
+      },
+      {
+        "source": "action_1764452230.491979",
+        "target": "action_1764452230.491979",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452230.491979",
+        "target": "action_1764452250.278033",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.04718828573822975
+        }
+      },
+      {
+        "source": "action_1764452236.007667",
+        "target": "action_1764452236.007667",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452239.060522",
+        "target": "action_1764452239.060522",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452239.060522",
+        "target": "action_1764452253.120171",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.05907222628593445
+        }
+      },
+      {
+        "source": "action_1764452250.278033",
+        "target": "action_1764452250.278033",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452253.120171",
+        "target": "action_1764452253.120171",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452261.939966",
+        "target": "action_1764452261.939966",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452261.944799",
+        "target": "action_1764452261.944799",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "screen",
+        "data": {
+          "text": "screen",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "People",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

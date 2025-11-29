@@ -1,0 +1,113 @@
+{
+  "captions": [
+    {
+      "time": 0,
+      "text": "The video begins showing the empty checkout counter area of a store or pharmacy."
+    },
+    {
+      "time": 4,
+      "text": "Two individuals, identified as robbers, quickly approach the counter where a cashier is standing."
+    },
+    {
+      "time": 5,
+      "text": "The first robber (wearing a hood) holds a silver handgun and places it on the counter, threatening the cashier."
+    },
+    {
+      "time": 7,
+      "text": "The second robber (wearing a yellow shirt and red hat) stands beside the first robber, observing the scene."
+    },
+    {
+      "time": 10,
+      "text": "The robbers begin to retreat from the counter area."
+    },
+    {
+      "time": 12,
+      "text": "The counter area is clear as the robbers have left the frame."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "S1",
+      "label": "Store/Pharmacy",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "C1",
+      "label": "Cashier",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "R1",
+      "label": "Robber 1 (Hooded)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "R2",
+      "label": "Robber 2 (Accomplice)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "G1",
+      "label": "Handgun",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "CT1",
+      "label": "Checkout Counter",
+      "type": "object",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "C1",
+      "target": "S1",
+      "label": "works_in"
+    },
+    {
+      "source": "R1",
+      "target": "S1",
+      "label": "enters"
+    },
+    {
+      "source": "R2",
+      "target": "S1",
+      "label": "enters"
+    },
+    {
+      "source": "R1",
+      "target": "G1",
+      "label": "holds"
+    },
+    {
+      "source": "R1",
+      "target": "C1",
+      "label": "threatens"
+    },
+    {
+      "source": "R1",
+      "target": "CT1",
+      "label": "places_on"
+    },
+    {
+      "source": "R2",
+      "target": "R1",
+      "label": "accompanies"
+    },
+    {
+      "source": "R1",
+      "target": "CT1",
+      "label": "stands_at"
+    },
+    {
+      "source": "C1",
+      "target": "CT1",
+      "label": "stands_at"
+    }
+  ]
+}

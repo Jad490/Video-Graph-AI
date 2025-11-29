@@ -1,0 +1,463 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764452434.565144",
+        "data": {
+          "action": "see",
+          "subject": "we",
+          "object": "persons",
+          "location": "image"
+        }
+      },
+      {
+        "id": "event_1764452469.967618",
+        "data": {
+          "action": "interviewing",
+          "subject": "reporter",
+          "object": "people",
+          "location": "store"
+        }
+      },
+      {
+        "id": "event_1764452495.260361",
+        "data": {
+          "action": "shows",
+          "subject": "image",
+          "object": "people",
+          "location": "store"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764452434.565144",
+        "target": "event_1764452434.565144",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "event_1764452434.565144",
+        "target": "event_1764452469.967618",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.006498950533568859
+        }
+      },
+      {
+        "source": "event_1764452434.565144",
+        "target": "event_1764452495.260361",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.237397238612175
+        }
+      },
+      {
+        "source": "event_1764452469.967618",
+        "target": "event_1764452469.967618",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "event_1764452469.967618",
+        "target": "event_1764452495.260361",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": -0.11873059719800949
+        }
+      },
+      {
+        "source": "event_1764452495.260361",
+        "target": "event_1764452495.260361",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764452434.57001",
+        "data": {
+          "verb": "see",
+          "agent": "we",
+          "target": "persons"
+        }
+      },
+      {
+        "id": "action_1764452439.007634",
+        "data": {
+          "verb": "captures",
+          "agent": "video",
+          "target": "moment"
+        }
+      },
+      {
+        "id": "action_1764452445.512655",
+        "data": {
+          "verb": "captures",
+          "agent": "video",
+          "target": "people"
+        }
+      },
+      {
+        "id": "action_1764452445.52094",
+        "data": {
+          "verb": "has",
+          "agent": "person",
+          "target": "hand"
+        }
+      },
+      {
+        "id": "action_1764452454.757906",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "scene"
+        }
+      },
+      {
+        "id": "action_1764452454.762679",
+        "data": {
+          "verb": "captures",
+          "agent": "camera",
+          "target": "individuals",
+          "manner": "closely"
+        }
+      },
+      {
+        "id": "action_1764452456.264105",
+        "data": {
+          "verb": "making",
+          "agent": "robber",
+          "target": "move"
+        }
+      },
+      {
+        "id": "action_1764452458.962584",
+        "data": {
+          "verb": "holding",
+          "agent": "man",
+          "target": "package"
+        }
+      },
+      {
+        "id": "action_1764452469.976038",
+        "data": {
+          "verb": "interviewing",
+          "agent": "reporter",
+          "target": "people"
+        }
+      },
+      {
+        "id": "action_1764452479.399604",
+        "data": {
+          "verb": "uses",
+          "agent": "robber",
+          "target": "knife"
+        }
+      },
+      {
+        "id": "action_1764452482.084794",
+        "data": {
+          "verb": "throwing",
+          "agent": "Person",
+          "target": "items"
+        }
+      },
+      {
+        "id": "action_1764452495.273997",
+        "data": {
+          "verb": "shows",
+          "agent": "image",
+          "target": "people"
+        }
+      },
+      {
+        "id": "action_1764452500.030926",
+        "data": {
+          "verb": "has",
+          "agent": "one",
+          "target": "hair"
+        }
+      },
+      {
+        "id": "action_1764452506.015513",
+        "data": {
+          "verb": "threaten",
+          "agent": "Robbers",
+          "target": "cashier"
+        }
+      },
+      {
+        "id": "action_1764452512.125884",
+        "data": {
+          "verb": "shows",
+          "agent": "footage",
+          "target": "robber"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764452434.57001",
+        "target": "action_1764452434.57001",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452439.007634",
+        "target": "action_1764452439.007634",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452439.007634",
+        "target": "action_1764452445.512655",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.036602865904569626
+        }
+      },
+      {
+        "source": "action_1764452445.512655",
+        "target": "action_1764452445.512655",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452445.512655",
+        "target": "action_1764452469.976038",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.06346527487039566
+        }
+      },
+      {
+        "source": "action_1764452445.512655",
+        "target": "action_1764452495.273997",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.18396806716918945
+        }
+      },
+      {
+        "source": "action_1764452445.52094",
+        "target": "action_1764452445.52094",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452454.757906",
+        "target": "action_1764452454.757906",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452454.757906",
+        "target": "action_1764452495.273997",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.013063382357358932
+        }
+      },
+      {
+        "source": "action_1764452454.762679",
+        "target": "action_1764452454.762679",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452456.264105",
+        "target": "action_1764452456.264105",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452456.264105",
+        "target": "action_1764452479.399604",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.10281622409820557
+        }
+      },
+      {
+        "source": "action_1764452456.264105",
+        "target": "action_1764452512.125884",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.1692822426557541
+        }
+      },
+      {
+        "source": "action_1764452458.962584",
+        "target": "action_1764452458.962584",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452469.976038",
+        "target": "action_1764452469.976038",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452469.976038",
+        "target": "action_1764452495.273997",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.10316501557826996
+        }
+      },
+      {
+        "source": "action_1764452479.399604",
+        "target": "action_1764452479.399604",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452479.399604",
+        "target": "action_1764452512.125884",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.06773586571216583
+        }
+      },
+      {
+        "source": "action_1764452482.084794",
+        "target": "action_1764452482.084794",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452495.273997",
+        "target": "action_1764452495.273997",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764452500.030926",
+        "target": "action_1764452500.030926",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764452506.015513",
+        "target": "action_1764452506.015513",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764452512.125884",
+        "target": "action_1764452512.125884",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "table",
+        "data": {
+          "text": "table",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "woman",
+        "data": {
+          "text": "woman",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "screen",
+        "data": {
+          "text": "screen",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "phone",
+        "data": {
+          "text": "phone",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

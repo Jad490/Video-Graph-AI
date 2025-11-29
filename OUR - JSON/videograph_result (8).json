@@ -1,0 +1,159 @@
+{
+  "captions": [
+    {
+      "time": 21.594,
+      "text": "The scene shows a residential garage area containing two parked cars and patio furniture."
+    },
+    {
+      "time": 21.609,
+      "text": "A small dog runs into the garage area from the right, followed by the partial entry of an intruder."
+    },
+    {
+      "time": 21.619,
+      "text": "Two intruders (Yellow Shirt and Blue Shirt) move between the cars, confirming unauthorized entry."
+    },
+    {
+      "time": 21.624,
+      "text": "Three intruders are now present; Intruder (Yellow Shirt) and Intruder (White Shirt) draw and point firearms."
+    },
+    {
+      "time": 21.63,
+      "text": "Intruder (Blue Shirt) stands briefly on the White SUV while the others aim their weapons towards the house entrance."
+    },
+    {
+      "time": 21.636,
+      "text": "Intruder (White Shirt) opens the door of the Silver Hatchback, possibly beginning a search."
+    },
+    {
+      "time": 21.641,
+      "text": "Two victims appear near the house entrance, confronted by the armed intruders."
+    },
+    {
+      "time": 21.646,
+      "text": "Intruder (Yellow Shirt) and Intruder (Blue Shirt) begin forcing the victims toward the interior doorway."
+    },
+    {
+      "time": 21.654,
+      "text": "The intruders successfully push the victims inside the house through the doorway."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "L_GARAGE",
+      "label": "Garage/Terrace",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "O_CAR_W",
+      "label": "White SUV",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "O_CAR_S",
+      "label": "Silver Hatchback",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "O_WEAPON",
+      "label": "Firearm",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "P_INTRUDER_Y",
+      "label": "Intruder (Yellow Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P_INTRUDER_B",
+      "label": "Intruder (Blue Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P_INTRUDER_W",
+      "label": "Intruder (White Shirt)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P_VICTIM_1",
+      "label": "Victim 1",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "P_VICTIM_2",
+      "label": "Victim 2",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "A_DOG",
+      "label": "Dog",
+      "type": "animal",
+      "group": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "P_INTRUDER_Y",
+      "target": "L_GARAGE",
+      "label": "enters"
+    },
+    {
+      "source": "P_INTRUDER_B",
+      "target": "L_GARAGE",
+      "label": "enters"
+    },
+    {
+      "source": "P_INTRUDER_W",
+      "target": "L_GARAGE",
+      "label": "enters"
+    },
+    {
+      "source": "P_INTRUDER_Y",
+      "target": "O_WEAPON",
+      "label": "holds"
+    },
+    {
+      "source": "P_INTRUDER_W",
+      "target": "O_WEAPON",
+      "label": "holds"
+    },
+    {
+      "source": "P_INTRUDER_Y",
+      "target": "P_VICTIM_1",
+      "label": "threatens"
+    },
+    {
+      "source": "P_INTRUDER_W",
+      "target": "O_CAR_S",
+      "label": "opens_door"
+    },
+    {
+      "source": "P_INTRUDER_B",
+      "target": "O_CAR_W",
+      "label": "stands_on"
+    },
+    {
+      "source": "P_INTRUDER_Y",
+      "target": "P_VICTIM_1",
+      "label": "forces"
+    },
+    {
+      "source": "P_INTRUDER_B",
+      "target": "P_VICTIM_2",
+      "label": "forces"
+    },
+    {
+      "source": "A_DOG",
+      "target": "L_GARAGE",
+      "label": "runs_into"
+    }
+  ]
+}

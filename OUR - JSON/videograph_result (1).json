@@ -1,0 +1,103 @@
+{
+  "captions": [
+    {
+      "time": 6.11,
+      "text": "A man (Robber) stands near a large display counter inside what appears to be a shop or storage room."
+    },
+    {
+      "time": 6.15,
+      "text": "The man walks briefly along the counter, surveying the area."
+    },
+    {
+      "time": 6.2,
+      "text": "The man stops and retrieves or brandishes a handgun."
+    },
+    {
+      "time": 6.22,
+      "text": "A second person (a young male) quickly enters the frame from the left."
+    },
+    {
+      "time": 6.24,
+      "text": "The man turns and raises the handgun, aiming it toward the second person's direction."
+    },
+    {
+      "time": 6.27,
+      "text": "The man points the handgun directly toward the left side of the room, threatening the person who entered."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "R1",
+      "label": "Robber",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P2",
+      "label": "Second Person",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "G1",
+      "label": "Handgun",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "L1",
+      "label": "Shop Interior",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "C1",
+      "label": "Display Counter",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "L2",
+      "label": "Ladder",
+      "type": "object",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "R1",
+      "target": "L1",
+      "label": "is_in"
+    },
+    {
+      "source": "R1",
+      "target": "C1",
+      "label": "stands_near"
+    },
+    {
+      "source": "R1",
+      "target": "G1",
+      "label": "holds"
+    },
+    {
+      "source": "R1",
+      "target": "P2",
+      "label": "aims_at"
+    },
+    {
+      "source": "P2",
+      "target": "L1",
+      "label": "enters"
+    },
+    {
+      "source": "L1",
+      "target": "C1",
+      "label": "contains"
+    },
+    {
+      "source": "L1",
+      "target": "L2",
+      "label": "contains"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "captions": [
+    {
+      "time": 19.5016,
+      "text": "A cashier is seated behind the checkout counter in a supermarket."
+    },
+    {
+      "time": 19.5018,
+      "text": "A man, identified as a robber, approaches the counter holding a handgun."
+    },
+    {
+      "time": 19.5021,
+      "text": "The robber stands opposite the cashier and points the handgun at her, initiating the robbery."
+    },
+    {
+      "time": 19.5025,
+      "text": "The cashier complies with the demand and reaches to open the cash register drawer."
+    },
+    {
+      "time": 19.503,
+      "text": "The cashier removes money from the register drawer."
+    },
+    {
+      "time": 19.504,
+      "text": "The robber collects the money from the counter."
+    },
+    {
+      "time": 19.5042,
+      "text": "The robber turns and exits the area, concluding the incident."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "Cashier",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N2",
+      "label": "Robber",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N3",
+      "label": "Handgun",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "N4",
+      "label": "Checkout Counter",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "N5",
+      "label": "Cash Register",
+      "type": "object",
+      "group": 2
+    },
+    {
+      "id": "N6",
+      "label": "Money",
+      "type": "object",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "N2",
+      "target": "N4",
+      "label": "approaches"
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "label": "holds"
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "label": "threatens"
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "label": "opens"
+    },
+    {
+      "source": "N1",
+      "target": "N6",
+      "label": "removes"
+    },
+    {
+      "source": "N2",
+      "target": "N6",
+      "label": "takes"
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "label": "exits"
+    }
+  ]
+}

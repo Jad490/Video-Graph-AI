@@ -1,0 +1,133 @@
+{
+  "captions": [
+    {
+      "time": 15.975,
+      "text": "The scene shows a customer waiting on a couch and two staff members working behind the reception desk in a salon."
+    },
+    {
+      "time": 15.975,
+      "text": "Robber 1 (woman in red) begins entering the reception area through the doorway."
+    },
+    {
+      "time": 15.975,
+      "text": "Robber 2 (man wearing a helmet) follows Robber 1, entering the establishment."
+    },
+    {
+      "time": 15.975,
+      "text": "Robber 2 draws a handgun and aims it toward the staff members behind the counter."
+    },
+    {
+      "time": 15.975,
+      "text": "The Customer reacts to the threat by raising her hands in surrender."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "Salon/Reception Area",
+      "type": "location",
+      "group": 4
+    },
+    {
+      "id": "N2",
+      "label": "Customer",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N3",
+      "label": "Staff Member 1 (Man)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N4",
+      "label": "Staff Member 2 (Woman)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "N5",
+      "label": "Robber 1 (Woman)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "N6",
+      "label": "Robber 2 (Man w/ Helmet)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "N7",
+      "label": "Handgun",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "N8",
+      "label": "Reception Desk",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "N9",
+      "label": "Couch",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "N10",
+      "label": "Doorway",
+      "type": "object",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "N2",
+      "target": "N9",
+      "label": "sits_on"
+    },
+    {
+      "source": "N3",
+      "target": "N8",
+      "label": "works_at"
+    },
+    {
+      "source": "N4",
+      "target": "N8",
+      "label": "works_at"
+    },
+    {
+      "source": "N5",
+      "target": "N10",
+      "label": "enters"
+    },
+    {
+      "source": "N6",
+      "target": "N10",
+      "label": "enters"
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "label": "holds"
+    },
+    {
+      "source": "N6",
+      "target": "N3",
+      "label": "threatens"
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "label": "threatens"
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "label": "threatens"
+    }
+  ]
+}

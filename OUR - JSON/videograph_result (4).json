@@ -1,0 +1,118 @@
+{
+  "captions": [
+    {
+      "time": 0,
+      "text": "Two individuals are standing behind the counter inside the store."
+    },
+    {
+      "time": 1,
+      "text": "A robber enters the store, approaches the counter, and pulls out a handgun."
+    },
+    {
+      "time": 3,
+      "text": "The robber points the handgun, threatening the employees behind the counter."
+    },
+    {
+      "time": 4,
+      "text": "One employee (purple shirt) immediately lunges over the counter and initiates a physical struggle with the robber."
+    },
+    {
+      "time": 5,
+      "text": "The employee and the robber grapple violently near the store entrance."
+    },
+    {
+      "time": 10,
+      "text": "The employee gains control of the struggle and begins forcing the robber toward the exit."
+    },
+    {
+      "time": 19,
+      "text": "The employee successfully pushes the robber completely out of the store entrance."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "store",
+      "label": "Store Interior",
+      "type": "location",
+      "group": 1
+    },
+    {
+      "id": "robber",
+      "label": "Robber (White Shirt)",
+      "type": "person",
+      "group": 2
+    },
+    {
+      "id": "employee1",
+      "label": "Employee (Purple Shirt)",
+      "type": "person",
+      "group": 3
+    },
+    {
+      "id": "employee2",
+      "label": "Employee (Dark Shirt)",
+      "type": "person",
+      "group": 3
+    },
+    {
+      "id": "handgun",
+      "label": "Handgun",
+      "type": "object",
+      "group": 4
+    },
+    {
+      "id": "counter",
+      "label": "Store Counter",
+      "type": "object",
+      "group": 4
+    },
+    {
+      "id": "entrance",
+      "label": "Store Entrance",
+      "type": "object",
+      "group": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "robber",
+      "target": "store",
+      "label": "enters"
+    },
+    {
+      "source": "robber",
+      "target": "handgun",
+      "label": "holds"
+    },
+    {
+      "source": "robber",
+      "target": "employee1",
+      "label": "threatens"
+    },
+    {
+      "source": "robber",
+      "target": "employee2",
+      "label": "threatens"
+    },
+    {
+      "source": "employee1",
+      "target": "robber",
+      "label": "fights"
+    },
+    {
+      "source": "employee1",
+      "target": "robber",
+      "label": "pushes"
+    },
+    {
+      "source": "employee1",
+      "target": "store",
+      "label": "defends"
+    },
+    {
+      "source": "robber",
+      "target": "entrance",
+      "label": "exits"
+    }
+  ]
+}

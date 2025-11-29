@@ -1,0 +1,121 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764450574.251237",
+        "data": {
+          "action": "has",
+          "subject": "person",
+          "object": "hands",
+          "location": "hips"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764450574.251237",
+        "target": "event_1764450574.251237",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0000001192092896
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764450571.208819",
+        "data": {
+          "verb": "threatens",
+          "agent": "robber",
+          "target": "cashier"
+        }
+      },
+      {
+        "id": "action_1764450574.255832",
+        "data": {
+          "verb": "has",
+          "agent": "person",
+          "target": "hands"
+        }
+      },
+      {
+        "id": "action_1764450576.725052",
+        "data": {
+          "verb": "fled",
+          "agent": "robber",
+          "target": "store"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764450571.208819",
+        "target": "action_1764450571.208819",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.9999999403953552
+        }
+      },
+      {
+        "source": "action_1764450571.208819",
+        "target": "action_1764450576.725052",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.1821817010641098
+        }
+      },
+      {
+        "source": "action_1764450574.255832",
+        "target": "action_1764450574.255832",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764450576.725052",
+        "target": "action_1764450576.725052",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "table",
+        "data": {
+          "text": "table",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}

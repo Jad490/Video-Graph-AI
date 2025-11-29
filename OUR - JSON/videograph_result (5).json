@@ -1,0 +1,126 @@
+{
+  "captions": [
+    {
+      "time": 21.103,
+      "text": "Three people (P1, P2, P3) are inside the convenience store, surrounded by shelving units."
+    },
+    {
+      "time": 21.1034,
+      "text": "P2 bends down near the central aisle shelving unit."
+    },
+    {
+      "time": 21.1037,
+      "text": "P2 crouches low to the ground."
+    },
+    {
+      "time": 21.1038,
+      "text": "P2 suddenly collapses and falls prone onto the floor."
+    },
+    {
+      "time": 21.1041,
+      "text": "P3 moves toward the back counter area while P2 remains lying on the floor."
+    },
+    {
+      "time": 21.1044,
+      "text": "P3 walks away from the counter area toward the right side of the store."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "P1",
+      "label": "Person in Red Outfit",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P2",
+      "label": "Person in White Tank Top (Collapsed)",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "P3",
+      "label": "Person in Light Shirt",
+      "type": "person",
+      "group": 1
+    },
+    {
+      "id": "Store",
+      "label": "Convenience Store",
+      "type": "location",
+      "group": 2
+    },
+    {
+      "id": "Shelves",
+      "label": "Product Shelving Units",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "Table",
+      "label": "Round Display Table",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "Sign",
+      "label": "Rectangular Sign/Mirror",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "Floor",
+      "label": "Floor",
+      "type": "object",
+      "group": 3
+    },
+    {
+      "id": "Counter",
+      "label": "Back Counter Area",
+      "type": "object",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "P1",
+      "target": "Store",
+      "label": "is_in"
+    },
+    {
+      "source": "P2",
+      "target": "Store",
+      "label": "is_in"
+    },
+    {
+      "source": "P3",
+      "target": "Store",
+      "label": "is_in"
+    },
+    {
+      "source": "P1",
+      "target": "Sign",
+      "label": "holds"
+    },
+    {
+      "source": "P2",
+      "target": "Shelves",
+      "label": "browses"
+    },
+    {
+      "source": "P3",
+      "target": "Shelves",
+      "label": "browses"
+    },
+    {
+      "source": "P2",
+      "target": "Floor",
+      "label": "collapses_onto"
+    },
+    {
+      "source": "P3",
+      "target": "Counter",
+      "label": "approaches"
+    }
+  ]
+}

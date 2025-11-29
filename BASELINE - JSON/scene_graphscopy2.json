@@ -1,0 +1,236 @@
+{
+  "scene_graph": {
+    "nodes": [
+      {
+        "id": "event_1764449822.024198",
+        "data": {
+          "action": "takes",
+          "subject": "robbery",
+          "object": "place",
+          "location": "feed"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "event_1764449822.024198",
+        "target": "event_1764449822.024198",
+        "data": {
+          "relationship": "leads_to",
+          "confidence": 1.0
+        }
+      }
+    ]
+  },
+  "action_graph": {
+    "nodes": [
+      {
+        "id": "action_1764449774.114409",
+        "data": {
+          "verb": "holding",
+          "agent": "person",
+          "target": "weapon"
+        }
+      },
+      {
+        "id": "action_1764449819.258957",
+        "data": {
+          "verb": "holding",
+          "agent": "robber",
+          "target": "gun"
+        }
+      },
+      {
+        "id": "action_1764449822.029257",
+        "data": {
+          "verb": "takes",
+          "agent": "robbery",
+          "target": "place"
+        }
+      },
+      {
+        "id": "action_1764449832.268986",
+        "data": {
+          "verb": "wearing",
+          "agent": "robber",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764449837.47406",
+        "data": {
+          "verb": "wearing",
+          "agent": "robber",
+          "target": "shirt"
+        }
+      },
+      {
+        "id": "action_1764449837.486299",
+        "data": {
+          "verb": "wearing",
+          "agent": "cashier",
+          "target": "shirt"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_1764449774.114409",
+        "target": "action_1764449774.114409",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764449819.258957",
+        "target": "action_1764449819.258957",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764449819.258957",
+        "target": "action_1764449832.268986",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.1051413044333458
+        }
+      },
+      {
+        "source": "action_1764449819.258957",
+        "target": "action_1764449837.47406",
+        "data": {
+          "relationship": "follows",
+          "confidence": 0.1051413044333458
+        }
+      },
+      {
+        "source": "action_1764449822.029257",
+        "target": "action_1764449822.029257",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      },
+      {
+        "source": "action_1764449832.268986",
+        "target": "action_1764449832.268986",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764449832.268986",
+        "target": "action_1764449837.47406",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764449832.268986",
+        "target": "action_1764449837.486299",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.0394970178604126
+        }
+      },
+      {
+        "source": "action_1764449837.47406",
+        "target": "action_1764449837.47406",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0
+        }
+      },
+      {
+        "source": "action_1764449837.47406",
+        "target": "action_1764449837.486299",
+        "data": {
+          "relationship": "follows",
+          "confidence": -0.0394970178604126
+        }
+      },
+      {
+        "source": "action_1764449837.486299",
+        "target": "action_1764449837.486299",
+        "data": {
+          "relationship": "follows",
+          "confidence": 1.0000001192092896
+        }
+      }
+    ]
+  },
+  "object_graph": {
+    "nodes": [
+      {
+        "id": "person",
+        "data": {
+          "text": "person",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "screen",
+        "data": {
+          "text": "screen",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "people",
+        "data": {
+          "text": "people",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "man",
+        "data": {
+          "text": "man",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "camera",
+        "data": {
+          "text": "camera",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "shirt",
+        "data": {
+          "text": "shirt",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "chair",
+        "data": {
+          "text": "chair",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "table",
+        "data": {
+          "text": "table",
+          "label": "OBJECT"
+        }
+      },
+      {
+        "id": "laptop",
+        "data": {
+          "text": "laptop",
+          "label": "OBJECT"
+        }
+      }
+    ],
+    "edges": []
+  },
+  "temporal_edges": []
+}
