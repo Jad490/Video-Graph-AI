@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: videograph-ai
+    env: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5001

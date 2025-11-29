@@ -85,7 +85,7 @@ export default function App() {
         setProgress(40)
 
         setProcessStep(`Sending ${frames.length} frames to backend API...`)
-        const response = await fetch('http://localhost:5001/api/analyze', {
+        const response = await fetch('/api/analyze', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ apiKey, frames }),
@@ -156,11 +156,10 @@ export default function App() {
         <div className="flex gap-4">
           <button
             onClick={() => setShowSettings(true)}
-            className={`flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border transition-all ${
-              apiKey
+            className={`flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border transition-all ${apiKey
                 ? 'bg-emerald-900/30 border-emerald-500/50 text-emerald-400'
                 : 'bg-slate-900 border-slate-700 text-slate-400 hover:border-slate-500'
-            }`}
+              }`}
           >
             {apiKey ? (
               <CheckCircle2 className="w-3 h-3" />
@@ -241,9 +240,8 @@ export default function App() {
               </>
             ) : (
               <div
-                className={`w-full h-full flex flex-col items-center justify-center border-2 border-dashed ${
-                  isDragging ? 'border-blue-500 bg-blue-500/10' : 'border-slate-800 hover:border-slate-700'
-                } transition-all p-8 text-center`}
+                className={`w-full h-full flex flex-col items-center justify-center border-2 border-dashed ${isDragging ? 'border-blue-500 bg-blue-500/10' : 'border-slate-800 hover:border-slate-700'
+                  } transition-all p-8 text-center`}
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
@@ -318,12 +316,11 @@ export default function App() {
                       videoRef.current.play()
                     }
                   }}
-                  className={`p-3 rounded-lg border cursor-pointer transition-all hover:bg-slate-800 ${
-                    currentTime >= cap.time &&
-                    currentTime < (resultData.captions[idx + 1]?.time || 999)
+                  className={`p-3 rounded-lg border cursor-pointer transition-all hover:bg-slate-800 ${currentTime >= cap.time &&
+                      currentTime < (resultData.captions[idx + 1]?.time || 999)
                       ? 'bg-blue-900/20 border-blue-500/50'
                       : 'bg-slate-900/50 border-slate-800'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-2 mb-1">
                     <Clock className="w-3 h-3 text-slate-500" />
@@ -356,11 +353,10 @@ export default function App() {
               <button
                 onClick={handleExportJSON}
                 disabled={!resultData}
-                className={`px-3 py-1 rounded-full border text-[11px] font-medium transition ${
-                  resultData
+                className={`px-3 py-1 rounded-full border text-[11px] font-medium transition ${resultData
                     ? 'border-slate-600 text-slate-200 hover:bg-slate-800'
                     : 'border-slate-800 text-slate-600 cursor-not-allowed'
-                }`}
+                  }`}
               >
                 Export JSON
               </button>
