@@ -163,7 +163,7 @@ We performed a comparative benchmark testing both models on a dataset of **100 v
 
 *While aggregate accuracy metrics were derived from the full 100-video dataset, we submitted a **random representative subset of 10 videos** to an independent third-party LLM for a detailed qualitative audit. This deep-dive analysis was conducted to objectively verify specific failure modes (e.g., hallucinations) and model behaviors without the subjectivity of manual review.*
 
-* **Sample Data:** The raw outputs for 10 test cases (Videos 13 - 44 - 56 - 86 - 98 - 108 - 120 - 130 - 132 - 159) are available in this repository under the directories `/BASELINE - JSON` (Teacher) and `/OUR - JSON` (VideoGraph AI).
+* **Sample Data:** The raw outputs for 10 test cases (Videos 13 - 44 - 56 - 86 - 98 - 108 - 120 - 130 - 132 - 159) are available in this repository under the directories `/BASELINE - JSON` (Baseline) and `/OUR - JSON` (VideoGraph AI).
  
 **1. Executive Summary**
 The difference between the two models is stark and fundamental.
@@ -171,9 +171,10 @@ The difference between the two models is stark and fundamental.
 * **Model A (VideoGraph AI)** functions as a **Forensic Analyst**. It demonstrates a high level of "visual understanding." It successfully tracks temporal events (start to finish), identifies specific object attributes (colors, weapon types), and interprets complex human behaviors (crawling, tackling, surrendering).
 * **Model B (Baseline)** functions as a **Generic Metadata Tagger**. It consistently fails to "see" the specific events of the video. It relies on high-level, abstract schema (e.g., "camera captures moment") and frequently hallucinates unrelated contexts, such as describing a violent robbery as a "reporter interviewing people."
 
-**2. Detailed Grading**
+### 2. Detailed Grading
 
 | Metric | Model A (Ours) | Model B (Baseline) |
+| :--- | :--- | :--- |
 | **Object Detection** | **High** (Detected specific guns, clothing colors, cars, dogs) | **Fail** (Generic labels like "object," "shirt," "outfit") |
 | **Action Recognition** | **High** (Detected "crawling," "vaulting," "struggling") | **Fail** (Generic verbs like "shows," "captures," "see") |
 | **Context Awareness** | **High** (Distinguished Garage vs. Store vs. Salon) | **Fail** (Labeled Garage as Store; Robbery as Interview) |
@@ -199,7 +200,7 @@ In this project, we used Render to handle deployment. Here's the sequence of ste
 
 4. *Render Configuration*: We created a render.yaml file containing the necessary configuration details for the deployment.
 
-5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL @https://video-graph-ai.onrender.com.
+5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL https://video-graph-ai.onrender.com.
 
 
 ## 🔄 Updates
