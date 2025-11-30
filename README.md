@@ -3,7 +3,7 @@
 **Generate scene graphs from videos using AI** 🎥✨
 
 Upload any video, extract frames, and transform them into interactive scene graphs! 
-You can run the app locally or use our website 👉 [https://video-graph-ai.onrender.com](https://video-graph-ai.onrender.com)
+You can run the app locally or use our website.
 
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
