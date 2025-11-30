@@ -71,6 +71,8 @@ git clone https://github.com/Jad490/Video-Graph-AI
 cd Video-Graph-AI
 ```
 
+## 🛠️ Commands
+
 **2. Start the backend:**
 
 ```bash
@@ -100,7 +102,7 @@ npm run dev
 
 ### 🧠 Model Choice
 
-We experimented with several vision-language models (LLaVA, Qwen, SmolVLM, etc.) during development, but we decided to stick with **Gemini** for caption generation, since it consistently produced much more accurate and temporally coherent captions on our CCTV robbery and non-robbery videos, while the other models were noticeably slower and less reliable in their descriptions.
+We experimented with several vision-language models (LLaVA, Qwen, SmolVLM, etc.) during development, but we decided to stick with the **Google Gemini API** for caption generation, since it consistently produced much more accurate and temporally coherent captions on our CCTV robbery and non-robbery videos, while the other models were noticeably slower and less reliable in their descriptions.
 
 ---
 
@@ -116,7 +118,7 @@ We experimented with several vision-language models (LLaVA, Qwen, SmolVLM, etc.)
   * relationships
 * **💬 Generates detailed captions** for every frame
 * **💾 Allows JSON export** of the final graph
-* **🔐 Keeps you in control** — the frontend only talks to your local backend
+
 
 ---
 
@@ -142,24 +144,6 @@ We experimented with several vision-language models (LLaVA, Qwen, SmolVLM, etc.)
 
 ---
 
-## 🛠️ Commands
-
-```bash
-# Frontend
-npm run dev
-
-# Backend
-npm run dev
-
-# Install all dependencies
-npm install
-
-# Build frontend
-npm run build
-```
-
----
-
 ## 🐛 Common Issues
 
 **API key errors?**
@@ -169,7 +153,7 @@ Make sure you pass your Gemini API key correctly through the UI.
 Ensure your video isn’t too dark or too fast-moving.
 
 **CORS problems?**
-Frontend and backend must run on different ports (5173 + 5000).
+Frontend and backend must run on different ports (for example, 5173 for the frontend and 5001 for the backend).
 
 ---
 
@@ -259,15 +243,6 @@ In this project, we used Render to handle deployment. Here's the sequence of ste
 4. *Render Configuration*: We created a render.yaml file containing the necessary configuration details for the deployment.
 
 5. *Deployment and URL*: Finally, we deployed the instance, and Render provided us with a live URL https://video-graph-ai.onrender.com
-
-
-## 🔄 Updates
-
----
-
-```bash
-git pull origin main
-```
 
 ---
 
